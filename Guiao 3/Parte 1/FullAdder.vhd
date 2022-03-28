@@ -11,6 +11,6 @@ architecture Behavioral of FullAdder is
 begin
 
 	s    <= cin xor (a xor b);
-	cout <= (a and b) or (cin and (a xor b));
+	cout <= (a and b) or (cin and (a or b));
 
 end Behavioral;	
